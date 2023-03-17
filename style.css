@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.developer__products-page {
+  display: flex;
+  flex-wrap: wrap;
+  height: unset;
+}
+.developer__products-page .developer__products-container {
+  width: 100%;
+  padding: 0.75rem;
+}
+.developer__products-page .developer__products-container .developer__product-list {
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.developer__products-page .developer__products-container .developer__product-list .developer__product-box {
+  height: 350px;
+  border-radius: 10px;
+}
+.developer__products-page .developer__products-container .developer__product-list .developer__product-box .developer__product-item {
+  border-radius: 10px;
+  background: #e0dfde;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.developer__products-page .developer__products-container .developer__product-list .developer__product-box .developer__product-item .developer__product-item-transition {
+  height: 60%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.developer__products-page .developer__products-container .developer__product-list .developer__product-box .developer__product-item .developer__product-item-transition:hover .developer__product-item-image img {
+  transform: scale(1.08);
+}
+.developer__products-page .developer__products-container .developer__product-list .developer__product-box .developer__product-item .developer__product-item-transition .developer__product-item-image {
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.developer__products-page .developer__products-container .developer__product-list .developer__product-box .developer__product-item .developer__product-item-transition .developer__product-item-image img {
+  transition: all 300ms;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.developer__products-page .developer__products-container .developer__product-list .developer__product-box .developer__product-item .developer__product-item-transition .developer__product-item-action {
+  display: none;
+}
+.developer__products-page .developer__products-container .developer__product-list .developer__product-box .developer__product-item .developer__product-item-details {
+  height: 20%;
+}/*# sourceMappingURL=style.css.map */
