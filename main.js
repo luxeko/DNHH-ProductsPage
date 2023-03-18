@@ -8,13 +8,13 @@ const start = () => {
                             <div class="developer__product-item">
                                 <div class="developer__product-item-transition">
                                 ${
-                                    item.sale && item.sale > 0 
-                                        ? 
-                                        '<div class="developer__product-item-sale">' 
-                                        + `${item.sale ? item.sale + "%" : ""} `
-                                        + '</div>' 
-                                        : ''
-                                }
+            item.sale && item.sale > 0
+                ?
+                '<div class="developer__product-item-sale">'
+                + `${item.sale ? item.sale + "%" : ""} `
+                + '</div>'
+                : ''
+        }
                                     
                                     <div class="developer__product-item-image">
                                         <img src="${item.imgUrl}" alt="image-1" />
@@ -42,10 +42,10 @@ const start = () => {
                                         <a title="${item.title}"><h3>${item.title}</h3></a>
                                         <p title="${item.description}">${item.description}</p>
                                          ${
-                                            item.sale && item.sale > 0 
-                                                ? '<span>' + '<span class="price-old">' + `${item.price}` + '</span>' + '<span class="price-new">' + `${item.price * (100 - item.sale) / 100} VNĐ` + '</span>' + '</span>' 
-                                                : '<span>'+ `${item.price} VNĐ` +'</span>'
-                                        
+                                            item.sale && item.sale > 0
+                                                ? '<span>' + '<span class="price-new">' + `${item.price * (100 - item.sale) / 100} VNĐ` + '</span>' + '<span class="price-old">' + `${item.price}` + '</span>' + '</span>'
+                                                : '<span>' + `${item.price} VNĐ` + '</span>'
+                                
                                         }
                                     </div>
                                     <div class="btn__plus">
